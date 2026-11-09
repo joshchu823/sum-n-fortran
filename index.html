@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>朱胤喆、414210624、80 分</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1d2330;--muted:#5d667a;--line:#d9dde5;--ok:#1a7f4b;--okbg:#e5f5ec;--bad:#b3261e;--badbg:#fdeceb;--warn:#8a5a00;--warnbg:#fff3d6;--accent:#2455d6;--code:#eef0f4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--card:#1d222b;--text:#e8ebf2;--muted:#9aa3b5;--line:#343b49;--ok:#5ad08f;--okbg:#17301f;--bad:#ff8a80;--badbg:#3a1d1b;--warn:#f2c46b;--warnbg:#3a2f14;--accent:#7aa2ff;--code:#12151b}}
+:root[data-theme="dark"]{--bg:#14171d;--card:#1d222b;--text:#e8ebf2;--muted:#9aa3b5;--line:#343b49;--ok:#5ad08f;--okbg:#17301f;--bad:#ff8a80;--badbg:#3a1d1b;--warn:#f2c46b;--warnbg:#3a2f14;--accent:#7aa2ff;--code:#12151b}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+main{max-width:780px;margin:0 auto;padding:20px 16px 56px}
+h1{font-size:1.35rem;margin:0 0 4px;line-height:1.4}
+.sub{color:var(--muted);margin:0 0 16px;font-size:.95rem}
+.id{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+label.f{font-size:.85rem;color:var(--muted);display:block;margin-bottom:3px}
+input[type=text]{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font:inherit}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:1.05rem;margin:0 0 8px;display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.badge{font-size:.85rem;padding:2px 10px;border-radius:99px;white-space:nowrap;font-weight:600}
+.ok{background:var(--okbg);color:var(--ok)}.bad{background:var(--badbg);color:var(--bad)}.warn{background:var(--warnbg);color:var(--warn)}
+.q{border-left:3px solid var(--accent);padding:2px 0 2px 10px;color:var(--muted);margin:0 0 10px;font-size:.95rem}
+h3{font-size:.9rem;margin:12px 0 4px;color:var(--muted)}
+pre{background:var(--code);border-radius:8px;padding:10px 12px;overflow-x:auto;font:.85rem/1.5 ui-monospace,Menlo,Consolas,monospace;margin:4px 0}
+p{margin:4px 0}
+ul{margin:4px 0;padding-left:20px}
+.res{margin-top:12px;padding:10px 12px;border-radius:8px}
+.chk{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:.92rem}
+.chk input{width:18px;height:18px}
+.total{text-align:center;font-size:2.4rem;font-weight:700;margin:2px 0}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+td{padding:5px 4px;border-top:1px solid var(--line)}td:last-child{text-align:right;font-weight:600;white-space:nowrap}
+</style>
+</head>
+<body>
+<main>
+<h1 id="h">朱胤喆、414210624、80 分</h1>
+<p class="sub">AI 輔助完成五項任務的過程、答案與評分結果（評分標準：每題 20 分，達標才給分）</p>
+
+<div class="id">
+<div><label class="f" for="nm">姓名</label><input type="text" id="nm" value="朱胤喆" placeholder="請填姓名"></div>
+<div><label class="f" for="sid">學號</label><input type="text" id="sid" value="414210624" placeholder="請填學號"></div>
+</div>
+
+<section class="card">
+<div class="total" id="tot">80 / 100</div>
+<table>
+<tr><td>第一題 編譯與執行</td><td id="s1" class="ok">20</td></tr>
+<tr><td>第二題 三次隨機驗證</td><td id="s2" class="ok">20</td></tr>
+<tr><td>第三題 Git 兩次 commit</td><td id="s3" class="ok">20</td></tr>
+<tr><td>第四題 推送 GitHub</td><td id="s4" class="bad">0</td></tr>
+<tr><td>第五題 評分系統</td><td id="s5" class="ok">20</td></tr>
+</table>
+<p class="sub" style="margin-top:10px">第一、二、三題已有 OneCompiler 的實際編譯與執行截圖作為證據，依證據給分。第四題尚未推送 GitHub，完成後勾選下方項目，分數與標題會自動更新。</p>
+</section>
+
+<section class="card">
+<h2>第一題：Fortran 1 加到 N 並編譯執行 <span class="badge ok" id="b1">20 / 20</span></h2>
+<p class="q">指揮 AI 輸出一個能做 1 加到 N 的 Fortran 程式並完成編譯，確認可以成功執行計算並輸出結果。</p>
+<h3>答案：程式碼（sum_n.f90）</h3>
+<pre>program sum_n
+    use iso_fortran_env, only: int64
+    implicit none
+
+    integer(int64) :: n, i, total
+
+    total = 0_int64
+
+    print *, 'Please enter N:'
+    read *, n
+
+    if (n &lt; 1) then
+        print *, 'Error: N must be a positive integer.'
+        stop
+    end if
+
+    do i = 1, n
+        total = total + i
+    end do
+
+    print *, '------------------------'
+    print *, 'Sum from 1 to N = ', total
+    print *, '------------------------'
+
+end program sum_n</pre>
+<h3>過程</h3>
+<ul><li>AI 撰寫程式：使用 int64 避免溢位，並加入 N 小於 1 的輸入檢查。</li>
+<li>AI 的執行環境沒有 gfortran 且無網路，無法自行編譯，因此改用線上編譯器 OneCompiler（https://onecompiler.com/fortran）。</li>
+<li>首次執行因 STDIN 空白導致逾時（Time limit exceeded），原因是程式在等待輸入；在 STDIN 填入 10 後重新執行成功。</li></ul>
+<h3>執行結果（OneCompiler 截圖）</h3>
+<pre>STDIN: 10
+ Please enter N:
+ ------------------------
+ Sum from 1 to N =                    55
+ ------------------------</pre>
+<div class="res ok"><b>AI 評分：20 / 20。</b>程式在 OneCompiler 成功編譯並執行，輸出 55，與 10×11÷2 相符。</div>
+</section>
+
+<section class="card">
+<h2>第二題：三次隨機驗證 <span class="badge ok" id="b2">20 / 20</span></h2>
+<p class="q">指揮 AI 執行該程式進行三次隨機的驗證，以確定該程式功能的正確性。</p>
+<h3>過程</h3>
+<ul><li>AI 以隨機方式產生三組不同量級的 N（兩位數、四位數、七位數），並用 Python 的迴圈與公式 N(N+1)/2 交叉計算預期值，兩者一致。</li>
+<li>使用者將三組 N 填入 OneCompiler 的 STDIN，執行同一份 Fortran 程式，取得實際輸出。</li></ul>
+<h3>答案：測試結果</h3>
+<table>
+<tr><td>測試</td><td>N</td><td>預期 N(N+1)/2</td><td>程式輸出</td></tr>
+<tr><td>1</td><td>31</td><td>496</td><td class="ok">496</td></tr>
+<tr><td>2</td><td>1534</td><td>1177345</td><td class="ok">1177345</td></tr>
+<tr><td>3</td><td>1253891</td><td>786121946886</td><td class="ok">786121946886</td></tr>
+</table>
+<div class="res ok"><b>AI 評分：20 / 20。</b>三次隨機測試的輸出都與預期值完全相符。第三組的和（約 7861 億）超過 32 位元整數上限，程式仍然正確，證明 int64 發揮作用。</div>
+</section>
+
+<section class="card">
+<h2>第三題：Git 版本控制與逐行註解 <span class="badge ok" id="b3">20 / 20</span></h2>
+<p class="q">針對所開發的程式進行 Git 版本控制，將原版認錄（commit），之後指揮 AI 針對原程式碼進行逐行註解並編譯驗證成功後，再次認錄為新版。</p>
+<h3>答案：git log --oneline</h3>
+<pre>0e87e75 v2: add line-by-line comments to sum_n.f90 (code unchanged; gfortran compile to be confirmed locally)
+f260645 v1: original sum_n.f90 (1+2+...+N), no comments</pre>
+<h3>過程</h3>
+<ul><li>先 commit 原版（v1，含 run_tests.sh 與 .gitignore）。</li>
+<li>指揮 AI 為每一行加上中文註解（v2），並以三項檢查確認只改註解、未動程式碼：移除註解後與原版完全一致；最長行 105 位元組，未超過 132 上限；每個非空行皆有註解。</li>
+<li>v2 再 commit 為新版。</li>
+<li>編譯驗證：將逐行註解版貼到 OneCompiler，STDIN 填 10，成功編譯並執行。</li></ul>
+<h3>註解版執行結果（OneCompiler 截圖）</h3>
+<pre>STDIN: 10
+ Please enter N:
+ ------------------------
+ Sum from 1 to N =                    55</pre>
+<div class="res ok"><b>AI 評分：20 / 20。</b>已有 v1、v2 兩次 commit，註解版編譯成功並輸出 55，與原版結果一致。</div>
+</section>
+
+<section class="card">
+<h2>第四題：推送到 GitHub <span class="badge bad" id="b4">0 / 20</span></h2>
+<p class="q">將本地端已經進行版本控制的程式碼，傳送到 Github 做雲端儲存。</p>
+<h3>答案：推送指令</h3>
+<pre>git remote add origin https://github.com/你的帳號/sum-n-fortran.git
+git branch -M main
+git push -u origin main</pre>
+<h3>過程</h3>
+<ul><li>AI 環境沒有網路，也沒有使用者的 GitHub 帳號與憑證，無法建立倉庫或推送。</li>
+<li>已提供步驟：建立空倉庫、設定 remote、以 gh auth login 或 Personal Access Token 驗證、推送後確認網頁看得到 2 個 commit。</li></ul>
+<div class="res bad"><b>AI 評分：0 / 20。</b>尚未推送，沒有可驗證的倉庫網址。</div>
+<label class="chk"><input type="checkbox" id="c4"> 我已推送成功，GitHub 上看得到程式碼與 2 個 commit</label>
+</section>
+
+<section class="card">
+<h2>第五題：任務達成評分系統 <span class="badge ok" id="b5">20 / 20</span></h2>
+<p class="q">要求AI做一個任務達成評分系統，允許輸入前四題的結果，達標就給分。</p>
+<h3>答案</h3>
+<p>已製作網頁版評分系統：<a href="https://claude.ai/artifact/DSjqEMi75fCo8ZqsyG9vQr">任務達成評分系統</a>（同時存成單一檔案 score.html）。</p>
+<ul><li>第一題：已編譯，且輸出含「= 數字」。</li>
+<li>第二題：三組 N 互不相同，且輸出的和都等於 N(N+1)/2。</li>
+<li>第三題：git log 至少 2 個 commit，且註解版編譯成功。</li>
+<li>第四題：GitHub 網址格式正確，且已推送。</li></ul>
+<h3>過程</h3>
+<p>以 Node 對評分函式做 15 組測試（通過與不通過情況皆涵蓋），全部符合預期。</p>
+<div class="res ok"><b>AI 評分：20 / 20。</b>系統完成、可運作，並有測試結果為證。</div>
+</section>
+</main>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  function update(){
+    var total = 80;
+    for(var i = 4; i <= 4; i++){
+      var on = $("c" + i).checked, p = on ? 20 : 0;
+      total += p;
+      $("s" + i).textContent = p;
+      $("s" + i).className = on ? "ok" : "bad";
+      $("b" + i).textContent = p + " / 20";
+      $("b" + i).className = "badge " + (on ? "ok" : "bad");
+    }
+    $("tot").textContent = total + " / 100";
+    var n = $("nm").value.trim() || "朱胤喆", s = $("sid").value.trim() || "414210624";
+    var t = n + "、" + s + "、" + total + " 分";
+    $("h").textContent = t;
+    document.title = t;
+  }
+  document.querySelectorAll("input").forEach(function(e){ e.addEventListener("input", update); e.addEventListener("change", update); });
+  update();
+})();
+</script>
+</body>
+</html>
